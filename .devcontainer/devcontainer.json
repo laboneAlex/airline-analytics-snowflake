@@ -2,7 +2,6 @@
 "name": "Airline Analytics - Snowflake",
 "image": "[mcr.microsoft.com/devcontainers/base:ubuntu-22.04](http://mcr.microsoft.com/devcontainers/base:ubuntu-22.04)",
 
-```
 "features": {
   "ghcr.io/devcontainers/features/python:1": {
     "version": "3.11"
@@ -31,5 +30,4 @@
 },
 
 "postCreateCommand": "pip install dbt-snowflake==1.9.0 && cp .env.example .env && echo '✅ Codespace ready! Edit .env
-```
 
