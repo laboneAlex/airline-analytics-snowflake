@@ -56,7 +56,7 @@ def get_flights(token, airport, begin, end, direction):
         return []
 
     response.raise_for_status()
-    flights = response.json()
+    flights = response.json() or []
 
     for flight in flights:
         flight["flight_direction"] = direction
