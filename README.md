@@ -22,3 +22,10 @@ Open your settings JSON:
 Ctrl+Shift+P → Preferences: Open Settings (JSON)
 Add this setting:
 "python.terminal.useEnvFile": true
+
+# Authentication
+Initially, my authentication was based on username and password which I had maintained in the .env file. Later snowflake asked me to implement MFA for secure account access. WIth the activation of the MFA, 
+I could not continue to use a username and password authentication for automation (I wouldn't be online at 2am to complete MFA!) so I had to change the authentication methode.
+I have 2 options:
+RSA key pair
+or using a programatic access token (PAT) which has the disadvantage that it expires within 15 minutes and would need to be continuously renewed - although this could probably be reolved with a python script.
